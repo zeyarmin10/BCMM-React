@@ -26,7 +26,7 @@ const Home = () => {
       <NavBar />
       <h1>Welcome Home!</h1>
       <h2>BAMAWL HR Integrated System</h2>
-      <p>
+      <p className="homeP">
         HR Integrated System, cloud services provided by Brycen Myanmar Co.,Ltd,
         is 3 in 1 system <br />1 Employee Management System <br />2 Employee
         Attendance System <br />3 Employee Salary Calculating System Like HR

@@ -1,16 +1,17 @@
 ul {
   margin-top: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 li {
   list-style-type: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 1rem 2rem;
+  margin: 0.5rem 1rem;
   cursor: pointer;
 }
 .navContainer {
-  background-color: rgb(88, 88, 88);
+  background-color: #264653;
   color: #fff;
-  box-shadow: 1px 1px black;
+  box-shadow: 0 10px 10px -4px lightblue;
 }

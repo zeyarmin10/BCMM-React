@@ -5,7 +5,7 @@ const ErrorPage = () => {
   return (
     <>
       <NavBar />
-      <h1>404</h1>
+      <h1 className="error">404</h1>
       <h1>Page Not Found</h1>
     </>
   );
