@@ -1,0 +1,37 @@
+/* h1 {
+  color: darkblue;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.user-reg label {
+  width: 10rem;
+  text-align: end;
+  vertical-align: top;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+.user-reg input {
+  width: 20rem;
+  padding: 0.5rem;
+}
+.user-reg textarea {
+  width: 20rem;
+}
+.profileList {
+  display: flex;
+}
+.user-profile ul li {
+  width: 10rem;
+  list-style: none;
+  padding-bottom: 1.5rem;
+  text-align: end;
+  vertical-align: top;
+}
+.userProfileDisplay  ul li {
+  width: 10rem;
+  list-style: none;
+  padding-bottom: 1.5rem;
+  text-align: start !important;
+  vertical-align: top;
+} */
