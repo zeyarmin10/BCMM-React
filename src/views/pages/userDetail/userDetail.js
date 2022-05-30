@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../navbar/navbar";
 import { useLocation } from "react-router-dom";
 
-const EmpDetial = () => {
+const UserDetail = () => {
   const location = useLocation();
-  const [detailData, setDetailData] = useState([]);
+  const [userDetail, setUserDetail] = useState([]);
 
   useEffect(() => {
     if (location.state != undefined) {
-      setDetailData(location.state.data);
+      setUserDetail(location.state.data);
     }
-    console.log(detailData);
   });
 
   return (
@@ -20,36 +19,36 @@ const EmpDetial = () => {
         <h2>Employee Profile</h2>
         <hr></hr>
         <div className="infoBox">
-          <p className="infoData">Username:</p>
+          <p className="infoData">ID:</p>
           <p className="infoDataSpan">
-            <span>{detailData.username}</span>
+            <span>{userDetail.id}</span>
           </p>
         </div>
         <div className="infoBox">
-          <p className="infoData">Fullname:</p>
+          <p className="infoData">First Name:</p>
           <p className="infoDataSpan">
-            <span>{detailData.fullname}</span>
-          </p>
-        </div>
-
-        <div className="infoBox">
-          <p className="infoData">Email:</p>
-          <p className="infoDataSpan">
-            <span>{detailData.email}</span>
+            <span>{userDetail.first_name}</span>
           </p>
         </div>
 
         <div className="infoBox">
-          <p className="infoData">Phone No:</p>
+          <p className="infoData">Last Name:</p>
           <p className="infoDataSpan">
-            <span>{detailData.ph_no}</span>
+            <span>{userDetail.last_name}</span>
           </p>
         </div>
 
         <div className="infoBox">
-          <p className="infoData">Address:</p>
+          <p className="infoData">Email :</p>
           <p className="infoDataSpan">
-            <span>{detailData.address}</span>
+            <span>{userDetail.email}</span>
+          </p>
+        </div>
+
+        <div className="infoBox">
+          <p className="infoData">Avatar:</p>
+          <p className="infoDataSpan">
+            <img src={userDetail.avatar} />
           </p>
         </div>
         <hr />
@@ -57,4 +56,4 @@ const EmpDetial = () => {
     </>
   );
 };
-export default EmpDetial;
+export default UserDetail;

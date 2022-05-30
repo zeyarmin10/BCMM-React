@@ -18,6 +18,7 @@ const EmpList = () => {
   return (
     <>
       <NavBar />
+      <h1>Employee List</h1>
       <table className="table">
         <thead>
           <tr>

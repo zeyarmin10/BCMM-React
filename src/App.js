@@ -25,6 +25,10 @@ const AboutUs = React.lazy(() => import("./views/pages/aboutUs/aboutUsIndex"));
 const ErrorPage = React.lazy(() =>
   import("./views/pages/errorPage/errorPageIndex")
 );
+const UserList = React.lazy(() => import("./views/pages/userList/userList"));
+const UserDetail = React.lazy(() =>
+  import("./views/pages/userDetail/userDetail")
+);
 
 const App = () => {
   const Loading = (
@@ -105,6 +109,11 @@ const App = () => {
           <Route path="/empDetail" component={EmpDetail}></Route>
           <Route path="/aboutUs" component={AboutUs}></Route>
           <Route exact path="/errorPage" component={ErrorPage}></Route>
+          <Route exact path="/userList" component={UserList}></Route>
+          <Route exact path="/userDetail" component={UserDetail}></Route>
+          <Route exact path="/">
+            <Redirect to="/home"></Redirect>
+          </Route>
           <Route>
             <Redirect to="/errorPage" />
           </Route>

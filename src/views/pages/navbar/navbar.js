@@ -13,6 +13,9 @@ const NavBar = () => {
   const empClick = () => {
     history.push("/employeeList");
   };
+  const userClick = () => {
+    history.push("/userList");
+  };
   const aboClick = () => {
     history.push("/aboutUs");
   };
@@ -23,6 +26,7 @@ const NavBar = () => {
           <li onClick={homeClick}>Home</li>
           <li onClick={regClick}>Register</li>
           <li onClick={empClick}>Employee List</li>
+          <li onClick={userClick}>User List</li>
           <li onClick={aboClick}>About Us</li>
         </ul>
       </nav>
